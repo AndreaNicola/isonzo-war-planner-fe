@@ -1,0 +1,5 @@
+<div class="row align-content-between">
+  <div class="col text-start">{{ m.name }}</div>
+  <div class="col text-end" (click)="this.appState.toggleMap(m)"> {{ isMapExcluded }}</div>
+</div>
+<img [src]="m.image" alt="m.name" class="img-thumbnail"/>
