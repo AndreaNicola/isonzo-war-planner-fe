@@ -3,13 +3,23 @@
 <div class="container-fluid py-3">
   <div class="row">
     <div class="col-2">
-      <app-clan-name (clanName)="this.appState.setClan1Name($event)"></app-clan-name>
-      <app-clan-name (clanName)="this.appState.setClan2Name($event)"></app-clan-name>
-      <app-randomize-factions></app-randomize-factions>
-      <app-map-list></app-map-list>
+      <div class="my-2">
+        <app-randomize-button></app-randomize-button>
+      </div>
+      <div class="my-2">
+        <app-clan-name [placeholder]="'Type the 1st clan name'" [label]="'1st clan name'" (clanName)="this.appState.setClan1Name($event)"></app-clan-name>
+      </div>
+      <div class="my-2">
+        <app-clan-name [placeholder]="'Type the 2nd clan name'" [label]="'2nd clan name'" class="my-2" (clanName)="this.appState.setClan2Name($event)"></app-clan-name>
+      </div>
+      <div class="my-2">
+        <app-randomize-factions></app-randomize-factions>
+      </div>
+      <div class="my-2">
+        <app-map-list></app-map-list>
+      </div>
     </div>
     <div class="col-10">
-      <app-randomize-button></app-randomize-button>
       <app-view-state></app-view-state>
     </div>
   </div>

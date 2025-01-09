@@ -5,8 +5,7 @@ export class AppState {
   battles: number = 3;
   clan1: string = '';
   clan2: string = '';
-  selectMaps: boolean = true;
-  selectFactions: boolean = true;
+  selectFactions: boolean = false;
   excludedMaps: Set<IsonzoMap> = new Set<IsonzoMap>();
   selectedMaps: { map: IsonzoMap, entente: string, centralPowers: string }[] = [];
 }
