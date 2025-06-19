@@ -7,10 +7,12 @@
         <app-randomize-button></app-randomize-button>
       </div>
       <div class="my-2">
-        <app-clan-name [placeholder]="'Type the 1st clan name'" [label]="'1st clan name'" (clanName)="this.appState.setClan1Name($event)"></app-clan-name>
+        <app-clan-name (clanName)="this.appState.setClan1Name($event)" [label]="'Entente'"
+                       [placeholder]="'Type the Entente clan name'"></app-clan-name>
       </div>
       <div class="my-2">
-        <app-clan-name [placeholder]="'Type the 2nd clan name'" [label]="'2nd clan name'" class="my-2" (clanName)="this.appState.setClan2Name($event)"></app-clan-name>
+        <app-clan-name (clanName)="this.appState.setClan2Name($event)" [label]="'Central powers'" [placeholder]="'Type the Central Powers clan name'"
+                       class="my-2"></app-clan-name>
       </div>
       <div class="my-2">
         <app-randomize-factions></app-randomize-factions>

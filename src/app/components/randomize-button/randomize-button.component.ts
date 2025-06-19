@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {AppStateService} from '../../services/app-state.service';
-import {MatButton, MatFabButton, MatIconButton} from '@angular/material/button';
+import {MatButton} from '@angular/material/button';
 import {MatIcon} from '@angular/material/icon';
 
 @Component({
@@ -12,5 +12,5 @@ import {MatIcon} from '@angular/material/icon';
   styleUrl: './randomize-button.component.css'
 })
 export class RandomizeButtonComponent {
-appState = inject(AppStateService);
+  appState = inject(AppStateService);
 }

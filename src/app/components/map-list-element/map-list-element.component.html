@@ -1,8 +1,8 @@
 <div class="col text-start my-1">
   <mat-slide-toggle
+    (toggleChange)="this.appState.toggleMap(m)"
     [checked]="this.isMapSelected"
-    [labelPosition]="'after'"
-    (toggleChange)="this.appState.toggleMap(m)">
+    [labelPosition]="'after'">
     {{ m.name }}
   </mat-slide-toggle>
 </div>

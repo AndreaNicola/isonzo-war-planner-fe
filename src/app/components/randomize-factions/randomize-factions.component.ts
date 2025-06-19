@@ -1,11 +1,13 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {AppStateService} from '../../services/app-state.service';
 import {MatSlideToggle} from '@angular/material/slide-toggle';
+import {TooltipComponent} from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-randomize-factions',
   imports: [
-    MatSlideToggle
+    MatSlideToggle,
+    TooltipComponent
   ],
   templateUrl: './randomize-factions.component.html',
   styleUrl: './randomize-factions.component.css'

@@ -33,6 +33,7 @@ export class AppStateService {
     {name: 'Piana', image: 'assets/images/piana.png'},
     {name: 'Piave', image: 'assets/images/piave.png'},
     {name: 'Sabotino', image: 'assets/images/sabotino.png'},
+    {name: 'Moschin', image: 'assets/images/moschin.png'},
   ];
 
   private state: AppState = new AppState();

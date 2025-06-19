@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RandomizeFactionsComponent } from './randomize-factions.component';
+import {RandomizeFactionsComponent} from './randomize-factions.component';
 
 describe('RandomizeFactionsComponent', () => {
   let component: RandomizeFactionsComponent;
@@ -10,7 +10,7 @@ describe('RandomizeFactionsComponent', () => {
     await TestBed.configureTestingModule({
       imports: [RandomizeFactionsComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(RandomizeFactionsComponent);
     component = fixture.componentInstance;

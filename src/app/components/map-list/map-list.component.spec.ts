@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MapListComponent } from './map-list.component';
+import {MapListComponent} from './map-list.component';
 
 describe('MapListComponent', () => {
   let component: MapListComponent;
@@ -10,7 +10,7 @@ describe('MapListComponent', () => {
     await TestBed.configureTestingModule({
       imports: [MapListComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MapListComponent);
     component = fixture.componentInstance;
